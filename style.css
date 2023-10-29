@@ -1,4 +1,308 @@
+:root {
+    --main-color: #FFFFFFE5;
+    --second-main-color: #FFFFFF8C;
+    --btn-color: #FF6E30;
+    --title-color: #FFA537;
+}
 body {
     background-color: #1E252B;
     color: aliceblue;
+}
+
+/* nav */
+
+.nav-wrap {
+    max-width: 1224px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 26px;
+    padding-bottom: 58px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 193px;
+    flex-wrap: wrap;
+}
+.nav-second-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 41px;
+    flex-wrap: wrap;
+}
+.nav-third-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 41px;
+    flex-wrap: wrap;
+}
+
+.first-list-item {
+    color: var(--main-color);
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.second-list-item {
+    color: var(--second-main-color);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.third-list-item {
+    color: var(--second-main-color);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 12px 28px 12px 28px;
+}
+.nav-btn-active {
+    padding: 12px 28px 12px 28px;
+    border-radius: 8px;
+    background: var(--btn-color);
+
+    color: var(--main-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.nav-btn:hover {
+    transition: 0.5s;
+    padding: 12px 28px 12px 28px;
+    border-radius: 8px;
+    background: var(--btn-color);
+    color: var(--main-text);
+}
+.nav-btn-active:hover {
+    transition: 0.5s;
+    background-color: #1E252B;
+    color: var(--btn-color);
+    outline: 2px solid var(--btn-color);
+}
+.categories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+/* hero */
+
+.hero {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.wrap-hero {
+    max-width: 1224px;
+    margin: 0 auto;
+    display: inline-block;  
+    padding-left: 15px;
+    padding-right: 15px;
+} 
+
+.hero-list {
+    max-width: 600px;
+    width: 100%;
+}
+.hero-title {
+    color: var(--main-color);
+    font-family: Poppins;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 70px */
+    padding-bottom: 30px;
+    padding-top: 46px;
+}
+.hero-title-span {
+    color: var(--btn-color);
+}
+.hero-desc {
+    color: var(--second-main-color);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+    padding-bottom: 60px;
+}
+.hero-list-item-input {
+    max-width: 498px;
+    height: 64px;
+    padding: 8px 11px 8px 11px;
+    background-color: #283036;
+    outline: 1.5px solid rgba(255, 255, 255, 0.10);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 13px;
+    text-align: center;
+    margin-bottom: 110px;
+}
+.hero-input {
+    border: none;
+    background-color: #283036;
+    flex-grow: 4;
+    color: var(--second-main-color);
+}
+.hero-input:focus-visible {
+    outline: none;
+}
+.hero-btn {
+    padding: 12px 36px 12px 36px;
+    border-radius: 8px;
+    background: var(--btn-color);
+    flex-grow: 2;
+
+    color: var(--main-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.hero-btn:hover {
+    transition: 0.5s;
+    background-color: #283036;
+    color: var(--btn-color);
+    outline: 2px solid var(--btn-color);
+}
+.hero-list-item {
+    display: flex;
+    gap: 30px;
+}
+.hero-svg svg {
+    fill: white;
+}
+.hero-svg:hover svg {
+    transition: 0.5s;
+    fill: var(--btn-color);
+}
+.wrap-hero-img {
+    display: inline-block;
+    width: 589px;
+    height: 570px;
+    background-image: url(./image/hero.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+/* popular */
+
+.popular {
+    max-width: 1224px;
+    margin: 0 auto;
+    padding: 200px 15px 200px 15px;
+    
+}
+.popular-title {
+    color: var(--main-color);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 62.4px */
+}
+.popular-desc {
+    color: rgba(255, 255, 255, 0.55);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 166.667% */
+    max-width: 427px;
+    width: 100%;
+    margin: 0 auto;
+}
+.popular-list {
+    display: flex;
+    /* justify-content: space-between; */
+    align-content: space-between;
+    flex-wrap: wrap;
+    gap: 23px;
+}
+.popular-list-item {
+    max-width: 382px;
+    width: 100%;
+    height: 294px;
+    padding: 33px 33px 33px 33px;
+    /* margin-bottom: 100px; */
+    border-radius: 15px;
+}
+.popular-list-item:hover {
+    transition: 1s;
+    border-radius: 15px;
+    background-color: rgba(40, 48, 54, 0.60);
+}
+.popular-list-item-wrap {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.popular-item-title {
+    color: var(--main-color);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.popular-item-title-desc {
+    color: rgba(255, 165, 55, 0.55);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+.popular-item-desc {
+    color: rgba(255, 255, 255, 0.55);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+}
+
+.popular-list-item-svg svg {
+    cursor: pointer;
+    fill: grey;
+}
+.popular-list-item-svg:hover svg {
+    transition: 0.5s;
+    fill: #FD3B41;
+}
+.popular-list-item-btn {
+    padding: 9px 35px 9px 35px;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 147px;
+    border-radius: 8px;
+    background: #1E252B;
+}
+.popular-list-item-btn:hover {
+    transition: 1s;
+    border-radius: 8px;
+    color: var(--main-color);
+    background-color: var(--btn-color);
 }
