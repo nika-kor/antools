@@ -1,6 +1,10 @@
 body {
     background-color: #1E252B;
 }
+::selection {
+    background-color: #599acb;
+    color: #c3c3c3;
+}
 .container {
     max-width: 1254px;
     margin: 0 auto;
@@ -77,9 +81,44 @@ body {
     font-weight: 600;
     line-height: normal;
 }
+
 .second-list-item:hover {
     color: #ff7d46;
     transition: 0.5s;
+}
+.relative {
+    position: relative;
+}
+.sub-menu {
+    display: none;
+    /* opacity: 0;
+    height: 0; */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #283036;
+    font-size: 12px;
+    width: 130px;
+    padding: 8px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.sub-menu-link {
+    color: #FFFFFF8C;
+}
+.sub-menu-link:hover {
+    transition: 0.5s;
+    color: #ff7d46;
+}
+.relative:hover .sub-menu,
+.sub-menu:hover {
+    transition: 1s;
+    /* opacity: 100%;
+    height: 74px; */
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 .third-list-item {
     color: #FFFFFF8C;
@@ -549,6 +588,45 @@ body {
     padding-bottom: 80px;
     flex-wrap: wrap;
 }
+.wrap-team-img {
+    max-width: 399px;
+    width: 100%;
+    height: 492px;
+    background-image: url(./image/ronald.svg);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.wrap-team-img-text {
+    max-width: 265px;
+    width: 100%;
+    height: 91px;
+    padding: 13px 22px 13px 22px;
+
+    border-radius: 8px;
+    outline: 1px solid rgba(255, 255, 255, 0.10);
+    background-color: rgba(40, 48, 54, 0.20);
+    backdrop-filter: blur(25px);
+    margin-bottom: 29px;
+}
+.team-title {
+    color: rgba(255, 253, 253, 0.78);
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.39px;
+}
+.team-desc-first {
+    color: rgba(255, 253, 253, 0.55);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 .team-desc-wrap {
     max-width: 393px;
     width: 100%;
@@ -645,6 +723,7 @@ body {
     background: #FF6E30;
 }
 .contributor-btn:hover {
+    transition: 0.5s;
     color: #FF6E30;
     background-color: #283036;
     outline: 2px solid #FF6E30;
