@@ -284,9 +284,9 @@ body {
     border-radius: 15px;
     background-repeat: no-repeat;
     background-position: top right;
+    transition: all 1s;
 }
 .popular-list-item:hover {
-    transition: 1s;
     border-radius: 15px;
     background-color: rgba(40, 48, 54, 0.60);
     margin-bottom: 20px;
@@ -451,9 +451,9 @@ body {
     background-repeat: no-repeat;
     background-position: top right;
     margin-bottom: 50px;
+    transition: all 1s;
 }
 .tools-list-item:hover {
-    transition: 1s;
     border-radius: 15px;
     background-color: rgba(40, 48, 54, 0.60);
     margin-bottom: 20px;
