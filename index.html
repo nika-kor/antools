@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="reset.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./image/logo.png" />
 </head>
 <body>
     <header>
@@ -42,10 +43,11 @@
                       </svg>
                     </a>
                     <div class="sub-menu">
-                      <a href="#popular" class="sub-menu-link">Popular Tools</a>
-                      <a href="#trust" class="sub-menu-link">Trusted brand</a>
-                      <a href="#tools" class="sub-menu-link">Newcomer Tools</a>
-                      <a href="#team" class="sub-menu-link">Our Team</a>
+                      <a href="#popular" class="sub-menu-link active">Popular Tools</a>
+                      <a href="#trust" class="sub-menu-link active">Trusted brand</a>
+                      <a href="#tools" class="sub-menu-link active">Newcomer Tools</a>
+                      <a href="#team" class="sub-menu-link active">Our Team</a>
+                      <a href="#contributor" class="sub-menu-link">Join us</a>
                     </div>
                 </li>
                   <li><a href="" class="second-list-item">My Collections</a></li>
@@ -68,10 +70,10 @@
         <!-- hero -->
 
 
-        <section class="hero" data-aos="fade-right">
+        <section class="hero">
           
           <div class="container">
-              <div class="hero-list">
+              <div class="hero-list" data-aos="fade-right">
                     <h1 class="hero-title">Awesome tools for Designer & Developer<span class="hero-title-span">.</span></h1>
                     <p class="hero-desc">Antool is a web collection of information on paid or free Design and Development tools</p>
                   <form class="hero-list-item-input">
@@ -561,11 +563,11 @@
 
         <!-- contributor -->
 
-        <section class="contributor" id="contributor" data-aos="zoom-in-right">
-          <div class="container">
+        <section class="contributor" id="contributor">
+          <div class="container" data-aos="zoom-in">
             <h2 class="contributor-title">Become a contributor?</h2>
             <p class="contributor-desc">Join us and get tips & tricks to become a great Designer and Developer</p>
-            <form class="contributor-input-wrap">
+            <form class="contributor-input-wrap" data-aos="zoom-in">
               <input type="text" placeholder="Enter your email..." class="contributor-input">
               <button class="contributor-btn">Join Us</button>
             </form>
